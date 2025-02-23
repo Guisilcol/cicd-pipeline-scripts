@@ -65,13 +65,6 @@ log_info "  AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}"
 log_info "  AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}"
 
 ##############################
-# Limpeza do Repositório
-##############################
-log_info "Limpando o repositório: removendo todos os diretórios __pycache__..."
-find . -type d -name "__pycache__" -exec rm -rf {} +
-log_info "Limpeza concluída."
-
-##############################
 # Integração com o Git
 ##############################
 # Garante que as branches 'dev' e 'master' existam; se não, cria-as e publica automaticamente
